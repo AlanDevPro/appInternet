@@ -1,0 +1,11 @@
+doctype html
+html
+    head
+        title Search User by Username
+    body
+        h1 Search User by Username
+        form(action='/users/username/search' method='GET')
+            div
+                label(for='username') Username
+                input(type='text' name='username' required)
+            button(type='submit') Search
